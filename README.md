@@ -9,3 +9,5 @@ Demo'd in this repo:
 - Show/hide toggling
 - Controllers
 - Root $scope is bad
+- Templates
+- "Modularity"
