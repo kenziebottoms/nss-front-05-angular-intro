@@ -1,0 +1,8 @@
+<div class="todo">
+    <h3>To-do list</h3>
+    <ul>
+        <li ng-repeat="item in todos">
+            <input type="checkbox" ng-model="item.completed">{{item.name}}
+        </li>
+    </ul>
+</div>

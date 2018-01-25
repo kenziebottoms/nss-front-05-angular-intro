@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
-    <script src="app.js"></script>
     <style type="text/css">
         hr {
             margin: 2rem 0;
@@ -39,13 +37,16 @@
     </p>
 
     <hr>
+    
+    <div ng-view>
+    </div>
 
-    <p ng-controller="MsgCtrl">
-        {{message}}, {{coolBinding}}
-    </p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="ctrl/msg.js"></script>
+    <script src="ctrl/name.js"></script>
+    <script src="ctrl/todo.js"></script>
 
-    <p ng-controller="NameCtrl">
-        {{message}}
-    </p>
 </body>
 </html>

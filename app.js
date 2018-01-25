@@ -1,11 +1,15 @@
 "use strict";
 
-const myApp = angular.module("funStuff", []);
+const myApp = angular.module("funStuff", ["ngRoute"]);
 
-// NOT A FAT ARROW: CONSTRUCTOR
-myApp.controller("MsgCtrl", function($scope) {    
-    $scope.message = "yo bitch";
-});
-myApp.controller("NameCtrl", function($scope) {
-    $scope.message = "hctib oy";
+myApp.config($routeProvider => {
+    $routeProvider
+        .when("/", {
+            templateUrl: "partials/greeting.html",
+            controller: "MsgCtrl"
+        })
+        .when("/todo", {
+            templateUrl: "partials/todo.html",
+            controller: "TodoCtrl"
+        });
 });
