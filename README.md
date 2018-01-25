@@ -11,3 +11,4 @@ Demo'd in this repo:
 - Root $scope is bad
 - Templates
 - "Modularity"
+- Factories

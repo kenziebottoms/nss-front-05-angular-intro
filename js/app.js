@@ -11,5 +11,9 @@ myApp.config($routeProvider => {
         .when("/todo", {
             templateUrl: "partials/todo.html",
             controller: "TodoCtrl"
+        })
+        .when("/songs", {
+            templateUrl: "partials/songs.html",
+            controller: "SongCtrl"
         });
 });
