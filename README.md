@@ -8,8 +8,9 @@ Demo'd in this repo:
 - Input binding
 - Show/hide toggling
 - Controllers
-- Root $scope is bad
 - Templates
+- Routes
 - "Modularity"
 - Factories
 - Filter
+- Dynamic routes

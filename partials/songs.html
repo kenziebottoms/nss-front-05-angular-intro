@@ -2,7 +2,7 @@
     <h3>Songs</h3>
     <ul>
         <li ng-repeat="song in songs | filter:songSearch">
-            {{song.title}} by {{song.artist}}
+            <a href="#!/songs/{{song.id}}">{{song.title}}</a> by {{song.artist}}
         </li>
     </ul>
 </div>

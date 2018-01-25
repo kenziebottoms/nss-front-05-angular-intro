@@ -16,5 +16,9 @@ myApp.config($routeProvider => {
             templateUrl: "partials/songs.html",
             controller: "SongCtrl"
         })
+        .when("/songs/:songId", {
+            templateUrl: "partials/songDetail.html",
+            controller: "SongDetailCtrl"
+        })
         .otherwise("/");
 });
