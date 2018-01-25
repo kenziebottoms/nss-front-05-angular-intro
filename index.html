@@ -13,31 +13,9 @@
 </head>
 <body ng-app="funStuff">
     <h1>Angular</h1>
-    <p>{{a=5}}</p>
-    <p>{{a}}</p>
 
-    <hr>
+    <input type="text" ng-model="songSearch">
 
-    <input type="text" ng-model="coolBinding">
-    <span>this: {{coolBinding}}</span>
-
-    <hr>
-
-    <p ng-init="allowed=false">
-        The Secret Code is
-        <span ng-show="allowed">
-            24601
-        </span>
-        <span ng-hide="allowed">
-            Non yo busness
-        </span>
-        <div>
-            <input type="button" value="toggle" ng-click="allowed=!allowed">
-        </div>
-    </p>
-
-    <hr>
-    
     <div ng-view>
     </div>
 

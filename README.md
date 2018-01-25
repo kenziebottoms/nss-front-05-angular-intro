@@ -12,3 +12,4 @@ Demo'd in this repo:
 - Templates
 - "Modularity"
 - Factories
+- Filter
