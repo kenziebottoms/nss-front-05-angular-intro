@@ -6,16 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script src="app.js"></script>
+    <style type="text/css">
+        hr {
+            margin: 2rem 0;
+        }
+    </style>
 </head>
-<body ng-app>
+<body ng-app="funStuff">
     <h1>Angular</h1>
     <p>{{a=5}}</p>
     <p>{{a}}</p>
 
+    <hr>
+
     <input type="text" ng-model="coolBinding">
     <span>this: {{coolBinding}}</span>
 
-    <p ng-init="allowed:false">
+    <hr>
+
+    <p ng-init="allowed=false">
         The Secret Code is
         <span ng-show="allowed">
             24601
@@ -26,6 +36,12 @@
         <div>
             <input type="button" value="toggle" ng-click="allowed=!allowed">
         </div>
+    </p>
+
+    <hr>
+
+    <p ng-controller="msgCtrl">
+        {{message}}
     </p>
 </body>
 </html>
